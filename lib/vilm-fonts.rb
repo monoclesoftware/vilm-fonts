@@ -63,7 +63,7 @@ module Vilm
     end
 
     def self.font_path(font_name = "Chunkfive")
-      app_root  = Pathname.new(File.join(Gem::Specification.find_by_name("vilm-fonts").base_dir, "..", "..", "..", ".."))
+      app_root  = Pathname.new(File.join(Gem::Specification.find_by_name("vilm-fonts").base_dir, "..", "..", "..", "..", "..", ".."))
       font_path = File.join(Gem::Specification.find_by_name("vilm-fonts").gem_dir, "vendor", "assets", "fonts", "#{font_name}-webfont.ttf")
 
       if (font_path[0,1] == '/')
