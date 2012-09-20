@@ -1,0 +1,12 @@
+<% Vilm::Fonts::FONTS.each do |font| %>
+@font-face {
+    font-family: '<%= font %>';
+    src: url('<%= asset_path("#{font}-webfont.eot") %>');
+    src: url('<%= asset_path("#{font}-webfont.eot?#iefix") %>') format('embedded-opentype'),
+         url('<%= asset_path("#{font}-webfont.woff") %>') format('woff'),
+         url('<%= asset_path("#{font}-webfont.ttf") %>') format('truetype'),
+         url('<%= asset_path("#{font}-webfont.svg##{font}") %>') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+<% end %>
