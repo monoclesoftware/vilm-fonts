@@ -3,6 +3,7 @@ require "vilm-fonts/version"
 module Vilm
   module Fonts
     FONTS = [
+             "abraham_lincoln",
              "arvil_sans",
              "blackout_midnight",
              "blackout_sunrise",
